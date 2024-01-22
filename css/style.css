@@ -1,0 +1,22 @@
+body {
+    font-family: Roboto;
+    color: var(--brand-color-title);
+    font-size: 14px;
+    line-height: 1.72;
+    background-color: var(--brand-color-name);
+    letter-spacing: 0.03em;
+    
+  }
+ /*  a {
+    color: aqua;
+    text-decoration: none;
+  } */
+  header {
+    border: 1px solid tomato;
+  }
+  main {
+    border: 1px solid green;
+  }
+  footer {
+    border: 2px solid black;
+  }
