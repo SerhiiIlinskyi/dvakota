@@ -1,22 +1,217 @@
-body {
-    font-family: Roboto;
+* {
+  box-sizing: border-box;
+} 
+ p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+
+
+
+/** основні кольори **/
+:root {
+  --brand-color-title: rgb(25, 121, 21);
+  --brand-color-style: rgb(223, 17, 17);
+  --brand-color-letter: black;
+  --brand-color-substrate: #2f303a;
+  --brand-color-link:rgb(25 121 21);
+  --color-shadov: rgb(111, 123, 110) ;
+  
+}
+
+
+
+/**----------зміна кольору кнопки---------**/
+.header .nav-color:hover  {
+  background-color: var(--brand-color-title);
+  color: var(--brand-color-style);
+}
+
+.header-btn:hover,
+.header-btn:focus  {
+  color: var(--brand-color-style);
+
+}
+.header-tel:hover,
+.header-tel:focus {
+  color:  var(--brand-color-style);
+
+}
+
+.menu .menu-color:hover {
+ background-color: var(--brand-color-title);
+  color: var(--brand-color-style);
+  }
+
+.menu-g .menu-alle:hover{
+  background-color: var(--brand-color-style);
+  color: var(--brand-color-title);
+}
+
+.footer .footer-color:hover {
+  color: var(--brand-color-style);
+}
+
+
+
+
+
+ .body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--brand-color-title);
     font-size: 14px;
     line-height: 1.72;
-    background-color: var(--brand-color-name);
+    background-color: greenyellow;
     letter-spacing: 0.03em;
+  }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 1101.74px;
+  line-height: 15px;
+  top: 40px;
+  letter-spacing: 0,09em;
+  text-transform: uppercase;
+  }
+  
+
+  
+
+
+/**-----------------header------------------**/
+header {
+  font-family: sans-serif;
+  background-color: var(--brand-color-substrate);
+  border: 1px solid tomato;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-heigh:1.3px;
+  letter-spacing: 0.1em;
+  color: var(--brand-color-title);
+ /*  text-shadow: 5px 5px 10px #d81111 ; */
+  }
+  
+  .header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-heigh:1.3px
+  letter-spacing: 0.1em;
+  color: var(--brand-color-title);
+  }
+
+.header-nav {
+  list-style: none;
+}
+
+
+
+
+
+
+
+.logotip{
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--brand-color-letter);
+  background-color: var(--brand-color-style);
+} 
+
+/**--------шапка--------**/
+.hero {
+  /* font-family: sans-serif; */
+  background-color: var(--brand-color-title) ;
+}
+
+
+
+
+
+ 
+   main {
+    border: 1px solid green;
+  } 
+  
+/**------------menu---------**/
+
+  .menu {
+        color: rgb(8, 81, 15);
+  } 
+  .menu-alle{
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    
+    background-color: var(--brand-color-title);
+    color: var(--brand-color-style);
+    border: none;
+
+  }
+
+  
+
+  .menu-color {
+    box-sizing: content-box;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin: 2px;
+   /*  background-color: aqua; */
+    text-align: center; 
+    font-weight: 600;
+    font-size: 15px;
+    line-heigh:1.36;
+    /* color: aqua; */
+    text-shadow: 5px 5px 10px #2f303a ;
+  }
+
+
+
+  /**-----------Нижня строка-------**/
+ footer {
+    /* color: aliceblue; */
+    background-color: var(--brand-color-substrate);
+    border: 2px solid rgb(227, 28, 28);
+  }
+  .footer-link {
+   
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--brand-color-link);
     
   }
- /*  a {
-    color: aqua;
-    text-decoration: none;
-  } */
-  header {
-    border: 1px solid tomato;
-  }
-  main {
-    border: 1px solid green;
-  }
-  footer {
-    border: 2px solid black;
-  }
+
+.footer-tel {
+  list-style: none;
+  margin: 50px;
+  padding: 20px;
+}
+
+
