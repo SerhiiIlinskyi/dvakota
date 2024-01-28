@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 } 
  p,
@@ -18,7 +20,9 @@ ul {
 button {
   cursor: pointer;
 }
-
+p{
+  margin-left: 50px;
+}
 
 
 /** основні кольори **/
@@ -69,14 +73,19 @@ button {
 
 
 
- .body {
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--brand-color-title);
     font-size: 14px;
     line-height: 1.72;
     background-color: greenyellow;
     letter-spacing: 0.03em;
-  }
+  } 
+
+.contaier {
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 .list {
   list-style: none;
@@ -111,13 +120,15 @@ header {
   line-heigh:1.3px;
   letter-spacing: 0.1em;
   color: var(--brand-color-title);
+  margin-left: 50px;
  /*  text-shadow: 5px 5px 10px #d81111 ; */
   }
   
   .header-tel {
   font-weight: 600;
   font-size: 12px;
-  line-heigh:1.3px
+  line-heigh:1.3px;
+  margin-left: 50px;
   letter-spacing: 0.1em;
   color: var(--brand-color-title);
   }
@@ -133,10 +144,13 @@ header {
 
 
 .logotip{
+ margin: 10px;
   font-weight: 900;
   text-transform: uppercase;
   color: var(--brand-color-letter);
   background-color: var(--brand-color-style);
+/*   text-decoration: line-through;
+ */
 } 
 
 /**--------шапка--------**/
@@ -146,49 +160,53 @@ header {
 }
 
 
-
-
-
- 
-   main {
-    border: 1px solid green;
-  } 
+main {
+  border: 1px solid green;
+  background-color: rgb(255, 145, 0);
+} 
   
+
+
+
 /**------------menu---------**/
 
   .menu {
-        color: rgb(8, 81, 15);
-  } 
+    color: rgb(8, 81, 15);
+  }
+  .menu-menu {
+    background-color: aquamarine;
+    border: 1px solid red;
+    border-radius: 5%;
+   /*  margin: 20px; */
+
+  }
   .menu-alle{
-    
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    
     background-color: var(--brand-color-title);
     color: var(--brand-color-style);
     border: none;
-
+    
   }
-
-  
+  .menu-img {
+    margin: 20px;
+    border-radius: 5%;
+  }
 
   .menu-color {
     box-sizing: content-box;
-    width: 150px;
-    height: 30px;
-    padding: 5px;
-    margin: 2px;
-   /*  background-color: aqua; */
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(195, 224, 33); 
     text-align: center; 
     font-weight: 600;
     font-size: 15px;
     line-heigh:1.36;
     /* color: aqua; */
-    text-shadow: 5px 5px 10px #2f303a ;
+    text-shadow: 5px 5px 10px #2f303a;
+    border: 1px solid rgb(12, 158, 17);
+    border-radius: 15%;
+    letter-spacing: 0.2em;
   }
-
 
 
   /**-----------Нижня строка-------**/
@@ -198,7 +216,7 @@ header {
     border: 2px solid rgb(227, 28, 28);
   }
   .footer-link {
-   
+    margin: 50px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.36;
@@ -211,7 +229,9 @@ header {
 .footer-tel {
   list-style: none;
   margin: 50px;
+  
   padding: 20px;
+
 }
 
 
