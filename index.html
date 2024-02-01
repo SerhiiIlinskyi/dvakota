@@ -20,8 +20,8 @@
 <body>
     <!--верхня строка-->
     <header class="header">
-        <div class="contaier">
-            <nav class="header-nav">
+        <div class="contaier header-list">
+            <nav class="header-nav header-free">
                 <a href="" class="header-logo logotip link">Два коти</a>
                 <ul class="list">
                     <li>
@@ -82,15 +82,22 @@
         <section class="menu">
             
             <h2>Меню</h2>
-            <ul class="menu-catalog list">
+            <ul class="menu-catalog list menu-catalog">
                 <li class="menu-1 menu-menu"> 
                     <img src="/img/trink.jpg" class="menu-img" alt="Меню Напої" width="270" height="260">
                     <button class="menu-alle btn">Напої</button>
-                    <div class="contaier">
-                        <ul class="list">
+                    <div class="contaier ">
+                        <ul class="list menu-list">
                             <li class="menu-color">
-                                <!-- <img src="" alt="Coca-Cola" width="150" height="150"> -->Coca-Cola</li>
-                            <li class="menu-color">Sprite</li>
+                                <h3>Coca-Cola</h3>
+                                <a class="menu-color-text">Напій солодкий газований</a>
+                                <span onclick=""></span>
+                            </li>
+                            <li class="menu-color">
+                                <h3>Sprite</h3>
+                                <a class="menu-color-text">Напій солодкий газований</a>
+                                <span onclick=""></span>
+                            </li>
                             <li class="menu-color">Fanta</li>
                             <li class="menu-color">Dr. Peper</li>
                             <li class="menu-color">Pepsi</li>
@@ -107,7 +114,7 @@
                     <img src="/img/spageti-udon-kur.jpg" class="menu-img" alt="Меню Лапша" width="270" height="260">
                     <button class="menu-alle btn">Лапша</button>
                     <div class="contaier">
-                        <ul class="list">
+                        <ul class="list menu-list">
                             <li class="menu-color">Яєчна лапша з куркою</li>
                             <li class="menu-color">Яєчна лапша з морепродуктами</li>
                             <li class="menu-color">Гречана лапша з куркою</li>
@@ -125,7 +132,7 @@
                     <img src="/img/set-menu-logo.jpg" class="menu-img" alt="Меню Сети" width="270" height="260">
                    <button class="menu-alle btn">Сети</button>
                    <div class="contaier">
-                        <ul class="list">
+                        <ul class="list menu-list">
                             <li class="menu-color">1</li>
                             <li class="menu-color">2</li>
                             <li class="menu-color">3</li>
@@ -143,7 +150,7 @@
                     <img src="/img/s-tuncem.jpg" class="menu-img" alt="Меню Роли" width="270" height="260">
                     <button class="menu-alle btn">Роли</button>
                     <div class="contaier">
-                        <ul class="list">
+                        <ul class="list menu-list">
                             <li class="menu-color">1</li>
                             <li class="menu-color">2</li>
                             <li class="menu-color">3</li>
@@ -160,7 +167,7 @@
                     <img src="/img/sashimi.jpg" class="menu-img" alt="Меню Сашімі" width="270" height="260">
                     <button class="menu-alle btn">Сашімі</button>
                     <div class="contaier">
-                        <ul class="list">
+                        <ul class="list menu-list">
                             <li class="menu-color">1</li>
                             <li class="menu-color">2</li>
                             <li class="menu-color">3</li>
@@ -177,7 +184,7 @@
                     <img src="/img/nigiri.jpg" class="menu-img" alt="Меню Нігірі" width="270" height="260">
                     <button class="menu-alle btn">Нігірі</button>
                     <div class="contaier">
-                        <ul class="list">
+                        <ul class="list menu-list">
                             <li class="menu-color">1</li>
                             <li class="menu-color">2</li>
                             <li class="menu-color">3</li>
@@ -204,7 +211,19 @@
  <!-- Нижня строка -->
     <footer class="footer">
         <a class="logotip">Два коти</a>
+               
         
+        <ul class="adres list">
+            <li>
+                <a  class="link footer-link" href="https://maps.app.goo.gl/ctJDfgHyu2gHC5uZ6" target="_blank" rel="">Наша адреса: м.Дніпро вул.Кобзаря
+                </a>
+            </li>
+            <li>
+                <a  class="link footer-tel footer-link"  href="tel:+380672003399">Наш телефон +380672003399
+                </a>
+            </li>    
+        </ul>
+
         <ul class="footer-list list">
             <li>
                 <p class="">Ми в соціальних мережах</p>
@@ -222,17 +241,6 @@
                 <a  class="link footer-link" href="tel:+380672003399"><span class="footer-color">Telegram</span></a>
             </li>
 
-        </ul>
-        
-        <ul class="adres list">
-            <li>
-                <a  class="link footer-link" href="https://maps.app.goo.gl/ctJDfgHyu2gHC5uZ6" target="_blank" rel="">Наша адреса: м.Дніпро вул.Кобзаря
-                </a>
-            </li>
-            <li>
-                <a  class="link footer-tel footer-link"  href="tel:+380672003399">Наш телефон +380672003399
-                </a>
-            </li>    
         </ul>
         
 
