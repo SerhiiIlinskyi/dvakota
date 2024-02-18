@@ -32,7 +32,9 @@ p{
   --brand-color-letter: black;
   --brand-color-substrate: #2f303a;
   --brand-color-link:rgb(25 121 21);
-  --color-shadov: rgb(111, 123, 110) ;
+  --color-shadov: rgb(111, 123, 110);
+  --brand-color-text: greenyellow;
+
   
 }
 
@@ -47,23 +49,40 @@ p{
 .header-btn:hover,
 .header-btn:focus  {
   color: var(--brand-color-style);
-
 }
+
 .header-tel:hover,
 .header-tel:focus {
   color:  var(--brand-color-style);
-
+}
+.btn-main .btn-menu-alle:hover,
+.btn-main .btn-menu-alle:focus {
+  /* background-color: var(--brand-color-link); */
+  color: var(--brand-color-style);
+  /* box-shadow: 0 2px 2px 0 var(--brand-color-substrate);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms; */
 }
 
 .menu .menu-color:hover {
  background-color: var(--brand-color-title);
-  color: var(--brand-color-style);
+  color: var(--brand-color-text);
   box-shadow: 5px 2px 3px 0 #2f303a;
   }
 
-.menu-g .menu-alle:hover{
-  background-color: var(--brand-color-style);
-  color: var(--brand-color-title);
+/* .menu-color .menu-prise:hover {
+  background-color: var(--brand-color-title);
+  color: var(--brand-color-style);
+  box-shadow: 5px 2px 3px 0 #2f303a;
+} */
+
+/*  .menu-g .menu-alle:hover{
+  background-color: var(--brand-color-text);
+  color: var(--brand-color-title); 
+} */
+
+.adres .footer-link:hover {
+  
 }
 
 .footer .footer-color:hover {
@@ -76,18 +95,17 @@ p{
 
 body {
   max-width: 1600px;
-    min-height: 320px;
-    width: ; 
-    height: ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--brand-color-title);
-    font-size: 14px;
-    line-height: 1.72;
-    background-color: greenyellow;
-    letter-spacing: 0.03em;
-
-    box-sizing: border-box;
-    display: block;
+  min-height: 320px;
+  width: ; 
+  height: ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--brand-color-title);
+  font-size: 14px;
+  line-height: 1.72;
+  background-color: var(--brand-color-text);
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  display: block;
 
   } 
 
@@ -113,20 +131,23 @@ body {
   }
   
 
-  
-
 
 /**-----------------header------------------**/
 header {
   font-family: sans-serif;
   background-color: var(--brand-color-substrate);
   border: 1px solid tomato;
+ /*  display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap; */
 }
 
 .header-list {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 .header-nav {
@@ -138,7 +159,11 @@ header {
 
 .header-free {
   display: flex;
-  margin-left: 93px
+  
+} 
+
+.header-logo {
+  
 }
 
 .header-link {
@@ -146,12 +171,16 @@ header {
   font-size: 12px;
   line-heigh:1.3px;
   letter-spacing: 0.1em;
+  background-color: aqua;
   color: var(--brand-color-title);
-  margin-left: 50px;
+  border: 10px;
+  margin-left: 20px;
  /*  text-shadow: 5px 5px 10px #d81111 ; */
   }
+
   
-  .header-tel {
+  
+.header-tel {
   font-weight: 600;
   font-size: 12px;
   line-heigh:1.3px;
@@ -159,8 +188,6 @@ header {
   letter-spacing: 0.1em;
   color: var(--brand-color-title);
   }
-
-
 
 
 .logotip{
@@ -171,18 +198,59 @@ header {
   background-color: var(--brand-color-style);
 /*   text-decoration: line-through;
  */
-} 
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+}
+
+
 
 /**--------шапка--------**/
+
+.btn-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-bottom: 50px; */
+  padding: 5px;
+  margin: 15px;
+ /* flex-direction: row;
+    justify-content: center; */
+   /*  display: list-item; */
+     
+
+}
+
+.btn-main-menu {
+
+}
+
+.btn-main-menu:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-menu-alle {
+
+}
+
+.btn-menu-roll {}
+.btn-menu-sashimi{}
+.btn-menu-nigiri{}
+.btn-menu-nudeln{}
+.btn-menu-set{}
+.btn-menu-trink{}
+
 .hero {
   /* font-family: sans-serif; */
-  background-color: var(--brand-color-title) ;
+  background-color: var(--brand-color-title);
+  color: var(--brand-color-letter);
 }
 
 
 main {
   border: 1px solid green;
-  background-color: rgb(255, 145, 0);
+  background-color: var(--brand-color-);
 } 
   
 
@@ -194,12 +262,16 @@ main {
     
     color: rgb(8, 81, 15);
   }
+  .menu-name {
+   
+
+  }
 
   .menu-catalog {
     width: ;
     height: ;
-   display: flex; 
-   flex-direction: column;
+    display: flex; 
+    flex-direction: column;
 
     /* justify-content: space-between; */
    /*  flex-wrap: wrap; */
@@ -230,24 +302,24 @@ main {
     border: none;
     display: flex;
     justify-content: center;
-      
-
     
 }
+
 .menu-img {
     margin: 20px;
     border-radius: 5%;
+
 }
 
 .menu-color {
     box-sizing: content-box;
-    width: 300px;
+    width: 200px;
     height: auto;
-   /*  padding: 10px; */
+    padding: 5px;
     margin: 10px;
     background-color: rgb(195, 224, 33); 
-    text-align: center; 
-   /*  font-weight: 600; */
+    text-align: center;
+    /*  font-weight: 600; */
     font-size: 15px;
     line-heigh:1.36;
     /* color: aqua; */
@@ -262,6 +334,7 @@ main {
 .menu-color-text {
     box-sizing: content-box;
     text-align: center;
+    
 } 
 
 
@@ -271,6 +344,13 @@ main {
    
   
   }
+    .menu-prise {
+    /* background-color: var(--brand-color-link);
+    margin: 10px;
+    border-radius: 25%; */ 
+    }
+
+
 
   .menu1 {
    
@@ -280,6 +360,8 @@ main {
   .menu4 {}
   .menu5 {}
   .menu6 {}
+
+  
 
 
   /**-----------Нижня строка-------**/
@@ -291,26 +373,46 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    /* align-items: column; */
+   
+
+
+   /*  display: flex;
+  align-items: baseline; */
   }
 
   .adres {
     color: var(--brand-color-title);
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 15px;
+   /*  display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; */
+    /* display: flex;
+    flex-direction: column; */
     padding-top: 15px;
 
   }
-
-  .footer-link {
-    margin: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-
-    color: var(--brand-color-link);
-    
+  
+  .footer-logotip {
+    font-family: Raleway;
+      font-size: 26px;
+      line-height: 1.17;
+      /* color: var(--brand-col); */
+      font-weight: 700;
+      text-decoration: none;
   }
+
+  .adres-footer {
+    /* display: flex;
+      flex-direction: column; */
+      padding-top: 15px;
+      font-style: normal;
+        font-weight: 400;
+
+  }
+
 
 .footer-tel {
   list-style: none;
@@ -322,6 +424,31 @@ main {
 
 .footer-list {
 
+/* align-items: column; */
 }
 
+.footer-soc {
+
+}
+ .footer-join {
+
+ }
+
+ .social-link {
+
+ }
+.footer-link {
+  margin: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--brand-color-link);
+
+}
+
+.footer-color {
+  color: var(--brand-color-title);
+}
 
