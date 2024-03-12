@@ -33,7 +33,12 @@ p{
   --brand-color-substrate: #2f303a;
   --brand-color-link:rgb(25 121 21);
   --color-shadov: rgb(111, 123, 110);
-  --brand-color-text: greenyellow;
+  --brand-color-text: rgb(64, 255, 47);
+  --brand-color-white: rgb (0, 0, 0);
+  --brand-color: rgb(18, 142, 7);
+  --brand-color-red: #e01212;
+  --brand-color-white: white;
+
 
   
 }
@@ -427,23 +432,38 @@ main {
 /* align-items: column; */
 }
 
+
+/**------Link Соціальних мереж------**/
+
 .footer-soc {
 
 }
- .footer-join {
+
+.footer-join {
 
  }
 
  .social-link {
+display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ .social-item {
 
  }
+
+ .footer-social-item {
+
+ }
+
+
+
 .footer-link {
   margin: 50px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-
   color: var(--brand-color-link);
 
 }
@@ -452,3 +472,12 @@ main {
   color: var(--brand-color-title);
 }
 
+.footer-social-icon {
+  
+fill: var(--brand-color-white) ;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  fill: var(--brand-color-title);
+}
